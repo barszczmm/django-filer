@@ -3,5 +3,5 @@ from django.conf.urls import patterns, url
 
 
 urlpatterns = patterns('filer.server.views',
-    url(r'^(?P<path>.*)$', 'serve_protected_file',),
+    url(r'^(?P<path>.*)$', 'serve_protected_file', name='filer-serve-protected-file'),
 )
